@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ThatPaper.ttf">
+            <string>ThatPaper</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="SWx-2A-Z5j">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="iNk-bw-vRe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aYE-OF-FR8">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mameshiba" translatesAutoresizingMaskIntoConstraints="NO" id="LkR-wQ-uP8">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mameshiba" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="120" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn4-vo-IOe">
+                                <rect key="frame" x="747" y="562" width="265" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="7UJ-20-a0a"/>
+                                    <constraint firstAttribute="height" constant="86" id="EyD-jY-QBL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ThatPaper" family="ThatPaper" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="friendship from pod to plate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mby-BY-LCK">
+                                <rect key="frame" x="747" y="648" width="265" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="6he-IK-298"/>
+                                    <constraint firstAttribute="height" constant="26" id="kOz-Qc-ds6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ThatPaper" family="ThatPaper" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LkR-wQ-uP8" firstAttribute="top" secondItem="aYE-OF-FR8" secondAttribute="top" id="MWj-jg-QRv"/>
+                            <constraint firstItem="LkR-wQ-uP8" firstAttribute="leading" secondItem="aYE-OF-FR8" secondAttribute="leading" id="NsR-ib-Hnm"/>
+                            <constraint firstItem="Nay-me-FYd" firstAttribute="bottom" secondItem="mby-BY-LCK" secondAttribute="bottom" constant="160" id="RfS-ne-FNY"/>
+                            <constraint firstAttribute="trailing" secondItem="LkR-wQ-uP8" secondAttribute="trailing" id="lKc-4i-2ni"/>
+                            <constraint firstItem="mby-BY-LCK" firstAttribute="trailing" secondItem="pn4-vo-IOe" secondAttribute="trailing" id="oIT-hc-VIT"/>
+                            <constraint firstItem="mby-BY-LCK" firstAttribute="top" secondItem="pn4-vo-IOe" secondAttribute="bottom" id="peY-Pb-w54"/>
+                            <constraint firstItem="Nay-me-FYd" firstAttribute="trailing" secondItem="mby-BY-LCK" secondAttribute="trailing" constant="100" id="xq5-HW-Grr"/>
+                            <constraint firstAttribute="bottom" secondItem="LkR-wQ-uP8" secondAttribute="bottom" id="zN9-G6-c52"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nay-me-FYd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zt4-8R-HdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="601"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mameshiba" width="800" height="600"/>
+    </resources>
+</document>
