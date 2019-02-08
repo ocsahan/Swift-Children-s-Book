@@ -26,7 +26,7 @@ class DataViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
-        let readToMe = defaults.value(forKey: "readToMe") as! Bool
+        let readToMe = defaults.value(forKey: "readToMe") as? Bool ?? false
         if readToMe {
             startReading()
         }
